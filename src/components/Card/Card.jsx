@@ -1,12 +1,12 @@
 import React from 'react'
 import Styles from './Card.module.css'
 import Star from '../../components/Star/Star'
-import SubmitButton from '../../components/SubmitButton/SubmitButton'
 import Description from '../../components/Description/Description'
-import Message from '../../components/Message/Message'
+import SubmitButton from '../../components/SubmitButton/SubmitButton'
+
 import {useState} from 'react'
 
-export default function Card() {
+export default function Card({triggerRatingUpdate}) {
     const clickAlert = () => {
         console.log('I am working');
       };
@@ -14,13 +14,12 @@ export default function Card() {
     const [state, setState] = useState({
         isActive: 0,
       });
-    console.log(state.isActive)
+    // console.log(state.isActive)
   return (
     <div className={Styles.cardBody}>
         <Star/>
         <Description name="How did we do?" description="Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!" align="left"/>
-        <form>
-          {/* <Message messageText='You selected 4 out of 5'/> */}
+      
             <div className='ratingWrap'>
               {[...Array(5).keys()].map((item) => {
                   return (
@@ -39,10 +38,9 @@ export default function Card() {
                   })}
             </div>
             <SubmitButton 
-            data="Submit" 
-            clickHandler={clickAlert}
-          /> 
-        </form>
+                data="Submit" 
+                clickHandler={() => triggerRatingUpdate(state.isActive)}
+            />
     </div>
   )
 }

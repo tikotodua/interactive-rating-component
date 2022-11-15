@@ -1,0 +1,14 @@
+.messageBody {
+    color:#FC7614;
+    padding: 4px 19px;
+    background: #262E38;
+    border-radius: 22.5px;
+    margin: 32px 0;
+}
+
+.SubmittedCardBody {
+    width: 348px;
+    padding: 32px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+}
