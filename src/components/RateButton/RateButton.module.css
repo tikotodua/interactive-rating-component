@@ -1,0 +1,27 @@
+.rateBody {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.rateItem{
+    background: #262E38;
+    width: 51px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+    color:white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight:700;
+    text-align: center;
+}
+
+.rateItem:hover{ 
+    background: #FC7614;
+}
+

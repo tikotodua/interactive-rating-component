@@ -1,0 +1,15 @@
+.starBody{
+    background: #262E38;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+    margin-bottom: 30px;
+}
+
+.starIcon{
+    width: 16px;
+    height: 16px;
+}

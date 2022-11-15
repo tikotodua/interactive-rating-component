@@ -1,0 +1,17 @@
+.buttonBody {
+    background: #FC7614;
+    border-radius: 22.5px;
+    color:white;
+    font-size: 15px;
+    text-transform: Uppercase;
+    font-weight: 700;
+    padding: 11px 0;
+    margin-top: 43px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.buttonBody:hover {
+    background: white;
+    color:#FC7614;
+}
